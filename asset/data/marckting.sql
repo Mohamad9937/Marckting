@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 14 سبتمبر 2022 الساعة 17:21
+-- Generation Time: 15 سبتمبر 2022 الساعة 18:40
 -- إصدار الخادم: 10.4.17-MariaDB
 -- PHP Version: 8.0.1
 
@@ -20,6 +20,29 @@ SET time_zone = "+00:00";
 --
 -- Database: `marckting`
 --
+
+-- --------------------------------------------------------
+
+--
+-- بنية الجدول `countact`
+--
+
+CREATE TABLE `countact` (
+  `id` int(250) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `job` text NOT NULL,
+  `massage` varchar(255) NOT NULL,
+  `data` varchar(50) NOT NULL,
+  `time` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- إرجاع أو استيراد بيانات الجدول `countact`
+--
+
+INSERT INTO `countact` (`id`, `name`, `email`, `job`, `massage`, `data`, `time`) VALUES
+(1, 'Mohamad', 'mohamad@gmail.com', 'Programing', 'xxssacxdd', '2022/09/15', '07:36:29');
 
 -- --------------------------------------------------------
 
@@ -53,6 +76,12 @@ INSERT INTO `user` (`id`, `username`, `email`, `password`, `data`, `phone`, `dat
 --
 
 --
+-- Indexes for table `countact`
+--
+ALTER TABLE `countact`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
@@ -61,6 +90,12 @@ ALTER TABLE `user`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `countact`
+--
+ALTER TABLE `countact`
+  MODIFY `id` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `user`

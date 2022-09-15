@@ -10,7 +10,6 @@ if(isset($_POST["join"])){
     $type=$_POST['select'];
     $data_join=date("Y/m/d");
     $time_join=date("h:i:s");
-    $f=" "; 
 
 
 
